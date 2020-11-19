@@ -142,6 +142,8 @@ $(document).ready(function() {
       //set background colors
       $('body').css('background-color', screen_bgcolors[idx]);
       console.log(screen_bgcolors);
+      console.log(idx);
+      console.log(screen_bgcolors[idx]);
     }
 
     function nextScreen() {
