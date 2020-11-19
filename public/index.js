@@ -127,6 +127,9 @@ $(document).ready(function() {
           $('.objstring').eq(idx).css('z-index', 1);
           //
           screens[idx].activate();
+          //set background colors
+          $('body').css('background-color', screen_bgcolors[idx]);
+          //
         } else {
           screens[idx].sendToBack();
           $('.objstring').eq(idx).css('z-index', -1);
@@ -139,11 +142,6 @@ $(document).ready(function() {
       if (curscreen == nscreen) {
         anext._deactivate();
       }
-      //set background colors
-      $('body').css('background-color', screen_bgcolors[idx]);
-      console.log(screen_bgcolors);
-      console.log(idx);
-      console.log(screen_bgcolors[idx]);
     }
 
     function nextScreen() {
