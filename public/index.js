@@ -100,6 +100,12 @@ $(document).ready(function() {
     screen_names['check'] = 2;
     screen_names['beach1'] = 3;
     screen_names['beach2'] = 4;
+    screen_bgcolors = [
+      '#999',
+      '#05C183',
+      '#555',
+      '#555'
+    ];
     var curscreen;
     for (var idx = 0; idx < nscreen; idx++) {
       screens.push(new Layer());
@@ -133,6 +139,8 @@ $(document).ready(function() {
       if (curscreen == nscreen) {
         anext._deactivate();
       }
+      //set background colors
+      $('body').css('background-color', screen_bgcolors[idx]);
     }
 
     function nextScreen() {
