@@ -949,7 +949,7 @@ $(document).ready(function() {
     changeScreen(1);
 
     //reveal the curtain.
-    $('#page-loading').css('z-index', -1);
+    $('#page-loading').css('display', 'none');
 
     //network event handlers
 
